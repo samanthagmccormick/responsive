@@ -1,16 +1,27 @@
+.main {
+	max-width: 960px;
+	margin: auto;
+}
+
 /*Main Nav*/
 
 .main-nav {
 	line-height: 80px;
 	max-width: 960px;
-	margin: auto;
 	text-align: center;
+}
+
+.main-nav ul {
+	margin: auto;
+	margin: 0;
+	padding: 0;
 }
 
 .main-nav li {
 	list-style: none;
 	display: inline-block;
-
+	padding: 10px;
+	margin-right: 10px;
 }
 
 .main-nav a {
@@ -22,15 +33,19 @@
 /*Content*/
 
 .content {
-	min-width: 510px;
+	padding: 0px 20px;
 }
 
 .content p {
 	font-size: 90%;
+	text-align: center;
 }
 
 .content img {
-	max-width: 100%;
+	display: block;
+	max-width: 90%;
+	margin: auto;
+
 }
 
 /*Gallery*/
@@ -39,4 +54,10 @@
 	display: inline-block;
 }
 
+@media screen and (max-width: 460px) {
+	.gallery img { display: block; margin-top: 4px;}
+
+@media screen and (max-width: 460px) {
+	.main-nav li { display: block; line-height: 10px;}
+}
 
